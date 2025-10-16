@@ -2,7 +2,7 @@ name: hello-world
 on: push
 jobs:
   my_job:
-    runs on: windos 11
+    runs on: windows 11
     steps:
       - name: my_step
         run: echo "hello world"
