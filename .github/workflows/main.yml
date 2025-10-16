@@ -6,3 +6,9 @@ jobs:
     steps:
       - name: my_step
         run: echo "hello world"
+  myJob:
+      needs: my_job
+      runs-on: ubuntu-latest 
+      steps:
+          - name: my-step
+            run: echo "Done!"
